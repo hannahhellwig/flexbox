@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #FFAEC1;
+  color: #fff;
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: #fff;
+  box-shadow:5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 140px;
+  margin-top: 55px;
+}
+
+.container {
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+}
+
+.container p {
+  color: #FF0055;
+  text-align: center;
+  padding-bottom: 5px;
+  margin: auto;
+  font-family: "open sans", sans-serif;
+  font-style: normal;
+}
+
+.card {
+  width: 25%;
+}
+
+.inner {
+ background-color: #FFDFE7;
+ margin: 10px;
+ padding: 5px;
+ box-shadow:5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.card img {
+  width:90%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px){
+  .container .card {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+ .container .card {
+    width: 50%;
+  }
+}
